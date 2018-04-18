@@ -1,0 +1,29 @@
+---
+swagger: "2.0"
+info:
+  description: "No description"
+  version: "0.0.1"
+  title: "CHPS API contract online"
+  contact: {}
+host: "localhost:10010"
+tags:
+- name: "Auth"
+- name: "Address Manager"
+- name: "Client Administration Manager"
+- name: "Document Manager"
+- name: "Error Manager"
+- name: "File Receipt Manager"
+- name: "Report Manager"
+- name: "Security Manager"
+- name: "Shared Document Manager"
+- name: "Test File Manager"
+- name: "System Values"
+- name: "Messages"
+- name: "Group Rules Manager"
+- name: "General"
+schemes:
+- "http"
+paths:
+  @@include('./apis.yml')
+definitions:
+  @@include('./definitions.yml')

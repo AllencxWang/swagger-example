@@ -1,12 +1,12 @@
-var fileinclude = require('gulp-file-include'),
-    gulp = require('gulp');
+const fileInclude = require('gulp-file-include');
+const gulp = require('gulp');
 
 gulp.task('default', function() {
-  gulp.src(['index.yml'])
-    .pipe(fileinclude({
+  gulp.src(['./src/swagger.yaml'])
+    .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file',
-      indent: true // must be true for indent your included filess.
+      indent: true
     }))
     .pipe(gulp.dest('./dist'));
 });

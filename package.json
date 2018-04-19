@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1",

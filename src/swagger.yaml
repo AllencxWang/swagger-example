@@ -24,6 +24,7 @@ tags:
 schemes:
 - "http"
 paths:
-  @@include('./apis.yml')
+  @@include('./paths/SharedDocument.yaml')
+  @@include('./paths/All_The_Rest.yaml')
 definitions:
-  @@include('./definitions.yml')
+  @@include('./definitions.yaml')

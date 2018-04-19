@@ -5,7 +5,7 @@ $ yarn run build
 ```
 the output file will be dist/swagger, you can then compare it with the original swagger file
 ```sh
-$ diff dist/swagger.yaml r1/swagger.yaml
+$ yarn run diff
 ```
 and it will tell you that these two files are identical, which proves the POC works
 

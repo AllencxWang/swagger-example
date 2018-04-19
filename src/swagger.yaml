@@ -1,30 +1,23 @@
----
-swagger: "2.0"
+swagger: '2.0'
 info:
-  description: "No description"
-  version: "0.0.1"
-  title: "CHPS API contract online"
-  contact: {}
-host: "localhost:10010"
+  version: 0.0.1
+  title: Enterprise API
+  description: Change Healthcare's Enterprise API
+  license:
+    name: MIT
+    url: 'https://opensource.org/licenses/MIT'
+host: 'localhost:5000'
+basePath: /api
 tags:
-- name: "Auth"
-- name: "Address Manager"
-- name: "Client Administration Manager"
-- name: "Document Manager"
-- name: "Error Manager"
-- name: "File Receipt Manager"
-- name: "Report Manager"
-- name: "Security Manager"
-- name: "Shared Document Manager"
-- name: "Test File Manager"
-- name: "System Values"
-- name: "Messages"
-- name: "Group Rules Manager"
-- name: "General"
+  - name: Users
+    description: API for users in the system
 schemes:
-- "http"
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
 paths:
-  @@include('./paths/SharedDocument.yaml')
-  @@include('./paths/All_The_Rest.yaml')
+  @@include('./paths/Users.yaml')
 definitions:
   @@include('./definitions.yaml')

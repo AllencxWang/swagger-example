@@ -1,5 +1,5 @@
 ### The idea behind
-the idea is to divide the original swagger file into smaller pieces, and reassemble those pieces through a build process. Take this POC for example, if you want to add api routes for a group (like a Manager in R1), you only have to: 
+the idea is to divide the original swagger file into smaller pieces, and reassemble those pieces through a build process. Take this POC for example, if you want to add api routes for a group, you only have to: 
 
 1. add a new file to src/paths/ directory
 2. write detailed descriptions (urls, schemas, whatever) in that file
@@ -30,6 +30,3 @@ if you want to use Swagger-UI to examine the reassembled swagger file, use the s
 ```sh
 $ yarn run ui
 ```
-
-### Memo
-- We only have a single definitions.yaml, currently. But it can also be split just like what we do to the paths.

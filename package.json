@@ -5,9 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp",
-    "diff": "diff dist/swagger.yaml assets/swagger.yaml",
+    "diff": "diff dist/swagger.yaml original/swagger.yaml",
     "edit": "cross-env swagger_swagger_editorDir=node_modules/swagger-editor swagger_swagger_fileName=dist/swagger.yaml swagger project edit",
-    "ui-all": "npm run build && cp dist/swagger.yaml public/assets && node server.js",
     "ui": "cp dist/swagger.yaml public/assets && node server.js"
   },
   "devDependencies": {
